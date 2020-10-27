@@ -8,4 +8,4 @@ var y = Math.round(t / years);
 
 console.log(y);
 var name="Robert";
-//document.getElementById("output").innerHTML=name;
+//\document.getElementById("output").innerHTML=name;
