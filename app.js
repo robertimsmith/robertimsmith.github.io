@@ -7,5 +7,5 @@ var t = Date.now();
 var y = Math.round(t / years);
 
 console.log(y);
-var name="Robert";
-//\document.getElementById("output").innerHTML=name;
+//var name="Robert";
+//document.getElementById("output").innerHTML=name;

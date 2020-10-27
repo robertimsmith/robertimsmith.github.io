@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="app.js"></script>
+<!--<script src="app.js"></script>-->
+<script>
+  var minutes = 1000 * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var t = Date.now();
+
+  var y = Math.round(t / years);
+
+  console.log(y);
+  var name="Robert";
+  document.getElementById("output").innerHTML=name;
+</script>
+
 
 <html>
 <head>
@@ -9,9 +23,10 @@
 <body>
     
 <h1>Time example</h1>
+<p id="output"></p>
 <p>The number of years since 1970 are </p>
 
-<p id="output"></p>
+
 
 </body>
 </html>
