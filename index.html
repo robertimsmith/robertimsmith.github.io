@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<script src="app.js"></script>-->
-<script type="text/javscript">
+<script>
   
   var minutes = 1000 * 60;
   var hours = minutes * 60;
@@ -12,7 +12,7 @@
   var y = Math.round(t / years);
 
   console.log(y);
- // document.getElementById("output").innerHTML=y;
+  document.getElementById("output").innerHTML=y;
 </script>
 
 
@@ -22,9 +22,9 @@
 </head>
 <body>
     
-<h1>Example</h1>
+<h1>"Example:" <span id="y"></span></h1>
 <p id="output"></p>
-<p>"Paragraph text: " + years</p>
+<p>"Paragraph text: " <span id="y"></span></p>
 
 
 
