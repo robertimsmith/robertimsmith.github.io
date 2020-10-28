@@ -1,11 +1,10 @@
-var minutes = 1000 * 60;
-var hours = minutes * 60;
-var days = hours * 24;
-var years = days * 365;
-var t = Date.now();
+var http = require('http');
+var fs = require('fs');
 
-var y = Math.round(t / years);
-
-console.log(y);
-//var name="Robert";
-//document.getElementById("output").innerHTML=name;
+//create a server object on http://localhost:8080/
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'content-type': 'text/html' })
+    fs.createReadStream('index.html').pipe(res)
+  })
+  
+  server.listen(process.env.PORT || 8080)
