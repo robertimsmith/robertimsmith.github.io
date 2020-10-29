@@ -1,5 +1,5 @@
-var http = require('http');
-var fs = require('fs');
+const http = require('http');
+const fs = require('fs');
 
 //create a server object on http://localhost:8080/
 const server = http.createServer((req, res) => {

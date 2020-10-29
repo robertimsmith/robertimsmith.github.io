@@ -1,11 +1,19 @@
 body {
-    background-color: rgb(25, 71, 197);
+    background-color: rgb(28, 18, 168);
   }
   h1 {
     color: rgb(255, 0, 106);
-    font-size: 10vw;
+    font-size: 5vw;
   }
   p {
     color: orange;
-    font-size: 5vw;
+    font-size: 1vw;
   }
+
+  /* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
