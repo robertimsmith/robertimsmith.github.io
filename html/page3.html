@@ -3,7 +3,6 @@ Live Demo
    <head>  
     <link rel="stylesheet" href="/style/style.css"> 
       <script type = "text/javascript">
-         <!--
             function ReadCookie() {
                var allcookies = document.cookie;
                document.write ("All Cookies : " + allcookies );
@@ -18,13 +17,12 @@ Live Demo
                   document.write ("Key is : " + name + " and Value is : " + value);
                }
             }
-         //-->
       </script>      
    </head>
    
    <body>     
       <form name = "myform" action = "">
-         <p> click the following button and see the result:</p>
+         <p> Hey <span id="username"></span> click the following button and see the result:</p>
          <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/>
       </form>      
    </body>

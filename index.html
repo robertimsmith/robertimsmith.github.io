@@ -10,9 +10,10 @@
              alert("Enter some value!");
              return;
           }
-          cookievalue = escape(document.myform.customer.value) + ";";
-          document.cookie = "name=" + cookievalue;
-          document.write ("Setting Cookies : " + "name=" + cookievalue );
+          cookievalue = escape(document.myform.customer.value);
+          //document.cookie = "name=" + cookievalue;
+          //document.write ("Setting Cookies : " + "name=" + cookievalue );
+          document.getElementById("username").innerHTML=cookievalue;
        }
  </script>      
 </head>
@@ -20,6 +21,7 @@
 
 <body>
   <h1>Main Page</h1>
+  <p>Hi, <span id="username"></span></p>
   <p>Current date: <span id="outputDate"></span>/<span id="outputMonth"></span>/</span><span id="outputYears"></span> </p>
   
 
