@@ -6,13 +6,21 @@
 
   <script type = "text/javascript">
        function WriteCookie() {
-          if( document.myform.customer.value == "" ) {
+         var now = new Date();
+         
+         now.setMonth(now.getMonth()+1);
+         cookievalue = escape(document.myform.customer.value)+ ";"
+         document.cookie ="name=" + cookievalue + " expires="+now.toUTCString()+"; path=/";
+         //document.cookie = "name=" + cookievalue;
+         //document.cookie = "expires=" + now.toUTCString() + ";"
+         //document.write ("All Cookies : " + document.cookie );
+        
+         
+         if( document.myform.customer.value == "" ) {
              alert("Enter some value!");
              return;
           }
-          cookievalue = escape(document.myform.customer.value);
-          //document.cookie = "name=" + cookievalue;
-          //document.write ("Setting Cookies : " + "name=" + cookievalue );
+          
           document.getElementById("username").innerHTML=cookievalue;
        }
  </script>      
@@ -44,7 +52,7 @@
 
 <form name = "myform" action = "">
   Enter name: <input type = "text" name = "customer"/>
-  <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+  <input type = "button" value = "Enter" onclick = "WriteCookie();"/>
 </form> 
 
 <!-- hitwebcounter Code START -->
