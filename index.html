@@ -7,15 +7,11 @@
   <script type = "text/javascript">
        function WriteCookie() {
          var now = new Date();
-         
+         //cookie expires in 1 month
          now.setMonth(now.getMonth()+1);
-         cookievalue = escape(document.myform.customer.value)+ ";"
-         document.cookie ="name=" + cookievalue + " expires="+now.toUTCString()+"; path=/";
-         //document.cookie = "name=" + cookievalue;
-         //document.cookie = "expires=" + now.toUTCString() + ";"
-         //document.write ("All Cookies : " + document.cookie );
-        
-         
+         cookievalue = escape(document.myform.customer.value)      
+         document.cookie ="name=" + cookievalue + "; expires="+now.toUTCString()+";domain=.; path=/";
+
          if( document.myform.customer.value == "" ) {
              alert("Enter some value!");
              return;
@@ -31,7 +27,6 @@
   <h1>Main Page</h1>
   <p>Hi, <span id="username"></span></p>
   <p>Current date: <span id="outputDate"></span>/<span id="outputMonth"></span>/</span><span id="outputYears"></span> </p>
-  
 
   <script>
     // current timestamp in milliseconds
@@ -59,8 +54,6 @@
 <a href="https://www.hitwebcounter.com" target="_blank">
   <img src="https://hitwebcounter.com/counter/counter.php?page=7700865&style=0001&nbdigits=5&type=page&initCount=0" title="Total Website Hits" 
   Alt="Web Hits" border="0" /></a>   
-
-
 
 
   <div class="navbar">

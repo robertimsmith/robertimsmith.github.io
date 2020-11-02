@@ -1,13 +1,13 @@
-Live Demo
+Cookie Demo
 <html>
-   <head>  
+   <head> 
     <link rel="stylesheet" href="/style/style.css"> 
       <script type = "text/javascript">
             function ReadCookie() {
                var allcookies = document.cookie;
-               //document.write ("All Cookies : " + document.cookie );
-               //document.getElementById("username").innerHTML=cookievalue;
-               
+               document.write ("All Cookies : " + document.cookie);
+               document.write("<br>");
+       
                // Get all the cookies pairs in an array
                cookiearray = allcookies.split(';');
                
@@ -15,28 +15,24 @@ Live Demo
                for(var i=0; i<cookiearray.length; i++) {
                   name = cookiearray[i].split('=')[0];
                   value = cookiearray[i].split('=')[1];
-                  //document.write (" Key is : " + name + " and Value is : " + value + ",");
-                  
+                  document.write (" Key: " + name + " , Value: " + value + ","); 
                }
-               
+
             }
-            document.getElementById("username").innerHTML=cookievalue;
-            document.write ("All Cookies : " + document.cookie );
+            
       </script>      
    </head>
    
-   <body>
-      <p>Hi, <span id="username"></span></p>     
+   <body>   
       <form name = "myform" action = "">
-         <p> Hey <span id="username"></span> click the following button and see the result:</p>
-         <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/>
+         <p> Click the button and see the results:</p>
+         <input type = "button" value = "Show cookies" onclick = "ReadCookie()"/>
       </form>      
    </body>
 
-
-   <div class="navbar">
-    <a href="/index.html">Home</a>
-    <a href="/html/page2.html">Useful links</a>
-    <a><strong>Page 3</strong></a>
-  </div>
+<div class="navbar">
+   <a href="/index.html">Home</a>
+   <a href="/html/page2.html">Useful links</a>
+   <a><strong>Page 3</strong></a>
+ </div>
 </html>
